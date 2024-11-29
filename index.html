@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="secondaryColor" content="#fea4c8">
+    <title>Body Contouring Business</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --color-primary: #252233; /* Primary color */
+            --color-primary-light: #6cb2eb; /* Light variant */
+            --color-primary-dark: #2779bd; /* Dark variant */
+
+            --color-secondary: #fea4c8; /* Secondary color */
+            --color-secondary-light: #fff382; /* Light variant */
+            --color-secondary-dark: #fcd34d; /* Dark variant */
+
+            --gradient-light-start: #ffffff; /* White for light mode */
+            --gradient-dark-start: #1a1a1a; /* Dark gray for dark mode */
+            --gradient-end: #fea4c8; 
+        }
+
+        /* Use Tailwind's custom properties for colors */
+        .bg-primary {
+            background-color: var(--color-primary);
+        }
+
+        .bg-primary-light {
+            background-color: var(--color-primary-light);
+        }
+
+        .bg-primary-dark {
+            background-color: var(--color-primary-dark);
+        }
+
+        .bg-secondary {
+            background-color: var(--color-secondary);
+        }
+
+        .bg-secondary-light {
+            background-color: var(--color-secondary-light);
+        }
+
+        .bg-secondary-dark {
+            background-color: var(--color-secondary-dark);
+        }
+
+        .text-primary {
+            color: var(--color-primary);
+        }
+
+        .text-secondary {
+            color: var(--color-secondary);
+        }
+
+        /* Gradient for light mode */
+        .gradient-bg {
+            background: linear-gradient(to bottom, var(--gradient-light-start), var(--gradient-end));
+        }
+
+        /* Gradient for dark mode */
+        .dark .gradient-bg {
+            background: linear-gradient(to bottom, var(--gradient-dark-start), var(--gradient-end));
+        }
+    </style>
+</head>
+
+<body class="text-gray-800 dark:text-white">
+    <!-- Hero Section -->
+    <header class="relative">
+        <video autoplay loop muted playsinline class="w-full h-[70vh] object-cover">
+            <source src="video.mov" type="video/quicktime">
+            Your browser does not support the video tag.
+        </video>
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
+            <img src = "IMG_0972.png" class="rounded w-48 mb-8" />
+            <h1 class="text-white text-4xl md:text-6xl font-bold mb-4 text-center">Reveal Your Best Self</h1>
+            <p class="text-white text-lg md:text-2xl text-center">Experience our advanced body contouring services.</p>
+            <p class="text-white text-lg md:text-2xl font-bold mt-4 text-center">From $59.99</p>
+        </div>
+    </header>
+    <div class="bg-gradient-to-b from-white dark:from-gray-800 to-[#fea4c8] dark:to-[#fea4c8]">
+        <section class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Rates</h2>
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-gem text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Basic Contour</h3>
+                    <p class="text-gray-500 dark:text-gray-300 mb-4">Perfect for beginners</p>
+                    <p class="text-4xl font-bold text-blue-500 mb-6">$59.99</p>
+                    <a href="https://thebeautyglamourshop.simplybook.me/v2/" target="_blank"class="bg-primary hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition">
+                        Book Now
+                    </a>
+                </div>
+    
+                <!-- Intermediate Plan -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-star text-yellow-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Intermediate Contour</h3>
+                    <p class="text-gray-500 dark:text-gray-300 mb-4">A step up for better results</p>
+                    <p class="text-4xl font-bold text-yellow-500 mb-6">$85.68</p>
+                    <a href="https://thebeautyglamourshop.simplybook.me/v2/" target="_blank"class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg transition">
+                        Book Now
+                    </a>
+                </div>
+    
+                <!-- Pro Plan -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-crown text-purple-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Advanced Contour</h3>
+                    <p class="text-gray-500 dark:text-gray-300 mb-4">For maximum results</p>
+                    <p class="text-4xl font-bold text-purple-500 mb-6">$110.50</p>
+                    <a href="https://thebeautyglamourshop.simplybook.me/v2/" target="_blank" class="bg-secondary hover:bg-purple-600 text-white px-6 py-3 rounded-lg transition">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Reviews Section -->
+        <section class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What Our Clients Say</h2>
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review Card -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 cursor-pointer">
+                    <p class="italic">"The best body contouring service I have ever experienced. Highly recommend!"</p>
+                    <div class="mt-4 text-right">
+                        <span class="font-bold">- Jane Doe</span>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 cursor-pointer">
+                    <p class="italic">"Amazing results! The staff was very professional and friendly."</p>
+                    <div class="mt-4 text-right">
+                        <span class="font-bold">- John Smith</span>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 cursor-pointer">
+                    <p class="italic">"Five stars for their excellent service and results!"</p>
+                    <div class="mt-4 text-right">
+                        <span class="font-bold">- Sarah Lee</span>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center underline text-blue-400 mt-12"><a href = "https://google.com" target = "_blank">View Our Reviews!</a></p>
+        </section>
+
+        <!-- Location Section -->
+        <section class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Location</h2>
+            <div class="max-w-4xl mx-auto">
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0060%2C40.7128%2C-73.9352%2C40.7750"
+                    class="w-full h-96 rounded-lg shadow-lg"></iframe>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Get in Touch</h2>
+            <div class="max-w-4xl mx-auto text-center space-y-4">
+                <p class="text-lg">📍 Etobicoke, ON Canada.</p>
+                <p class="text-lg">📞 (123) 456-7890</p>
+                <p class="text-lg">✉️ info@thebeatyglam.com</p>
+            </div>
+        </section>
+
+        <!-- Floating Action Button -->
+        <a href="https://thebeautyglamourshop.simplybook.me/v2/" target="_blank"
+            class="fixed bottom-8 right-8 bg-primary hover:bg-secondary text-white px-6 py-3 rounded-full shadow-lg transition">
+            Book a Session
+        </a>
+
+        <!-- Footer -->
+        <footer class="py-8 text-center">
+            <p>&copy; 2024 The Beaty Glamour Shop. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
