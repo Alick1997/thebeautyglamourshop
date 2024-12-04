@@ -64,6 +64,38 @@
         .dark .gradient-bg {
             background: linear-gradient(to bottom, var(--gradient-dark-start), var(--gradient-end));
         }
+
+        .shine {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shine::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -150%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                120deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.8) 50%,
+                rgba(255, 255, 255, 0) 100%
+            );
+            transform: skewX(-30deg);
+            animation: shine 2s infinite;
+        }
+
+        @keyframes shine {
+            0% {
+                left: -150%;
+            }
+            100% {
+                left: 150%;
+            }
+        }
+
     </style>
 </head>
 
@@ -78,48 +110,59 @@
             <img src = "resources/IMG_0972.png" class="rounded w-48 mb-8" />
             <h1 class="text-white text-4xl md:text-6xl font-bold mb-4 text-center">Reveal Your Best Self</h1>
             <p class="text-white text-lg md:text-2xl text-center">Experience our advanced body contouring services.</p>
-            <p class="text-white text-lg md:text-2xl font-bold mt-4 text-center">From $59.99</p>
+            <p class="text-white text-lg md:text-2xl font-bold mt-4 text-center">From $250.00</p>
         </div>
     </header>
-    <div class="bg-gradient-to-b from-white dark:from-gray-800 to-[#fea4c8] dark:to-[#fea4c8]">
+    <div class="bg-gradient-to-b from-white dark:from-gray-800 to-[#fea4c8] dark:to-[#fea4c8] px-4">
         <section class="py-16">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Rates</h2>
-            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
                 <!-- Basic Plan -->
-                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center border border-[#cd7f32]">
                     <div class="mb-4">
                         <i class="fas fa-gem text-blue-500 text-4xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Basic Contour</h3>
-                    <p class="text-gray-500 dark:text-gray-300 mb-4">Perfect for beginners</p>
-                    <p class="text-4xl font-bold text-blue-500 mb-6">$59.99</p>
-                    <a href="https://thebeautyglamourshop.simplybook.me/v2/" target="_blank"class="bg-primary hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition">
+                    <h3 class="text-4xl font-bold mb-2">Bronze</h3>
+                    <p class="text-gray-500 text-xl dark:text-gray-300 mb">3 Sessions</p>
+                    <p class="text-2xl font-bold text-[#cd7f32] mb-6">$250.00</p>
+                    <a href="https://thebeautyglamourshop.simplybook.me/v2/" target="_blank"class="bg-[#cd7f32] hover:bg-[#b7692e] text-white px-6 py-3 rounded-lg transition">
                         Book Now
                     </a>
                 </div>
     
                 <!-- Intermediate Plan -->
-                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center border border-gray-300">
                     <div class="mb-4">
                         <i class="fas fa-star text-yellow-500 text-4xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Intermediate Contour</h3>
-                    <p class="text-gray-500 dark:text-gray-300 mb-4">A step up for better results</p>
-                    <p class="text-4xl font-bold text-yellow-500 mb-6">$85.68</p>
-                    <a href="https://thebeautyglamourshop.simplybook.me/v2/" target="_blank"class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg transition">
+                    <h3 class="text-4xl font-bold mb-2">Silver</h3>
+                    <p class="text-gray-500 text-xl dark:text-gray-300 mb-4">6 Sessions</p>
+                    <p class="text-2xl font-bold text-gray-300 mb-6">$550.00</p>
+                    <a href="https://thebeautyglamourshop.simplybook.me/v2/" target="_blank"class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-6 py-3 rounded-lg transition">
                         Book Now
                     </a>
                 </div>
     
                 <!-- Pro Plan -->
-                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center border border-yellow-500 shine">
                     <div class="mb-4">
                         <i class="fas fa-crown text-purple-500 text-4xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Advanced Contour</h3>
-                    <p class="text-gray-500 dark:text-gray-300 mb-4">For maximum results</p>
-                    <p class="text-4xl font-bold text-purple-500 mb-6">$110.50</p>
-                    <a href="https://thebeautyglamourshop.simplybook.me/v2/" target="_blank" class="bg-secondary hover:bg-purple-600 text-white px-6 py-3 rounded-lg transition">
+                    <h3 class="text-4xl font-bold mb-2">Gold</h3>
+                    <p class="text-gray-500 text-xl dark:text-gray-300 mb-4">9 Sessions</p>
+                    <p class="text-2xl font-bold text-yellow-500 mb-6">$850.00</p>
+                    <a href="https://thebeautyglamourshop.simplybook.me/v2/" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg transition">
+                        Book Now
+                    </a>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center border border-[#e5e4e2] shine">
+                    <div class="mb-4">
+                        <i class="fas fa-crown text-purple-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold mb-2">Platinum</h3>
+                    <p class="text-gray-500 text-xl dark:text-gray-300 mb-4">12 Sessions</p>
+                    <p class="text-2xl font-bold text-[#e5e4e2] mb-6">$1,100.00</p>
+                    <a href="https://thebeautyglamourshop.simplybook.me/v2/" target="_blank" class="bg-[#e5e4e2] hover:bg-gray-300 text-gray-800 px-6 py-3 rounded-lg transition">
                         Book Now
                     </a>
                 </div>
@@ -157,18 +200,17 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Location</h2>
             <div class="max-w-4xl mx-auto">
                 <iframe
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0060%2C40.7128%2C-73.9352%2C40.7750"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-79.7%2C43.45%2C-79.67%2C43.48&layer=mapnik&marker=43.46694%2C-79.68579"
                     class="w-full h-96 rounded-lg shadow-lg"></iframe>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section class="py-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Get in Touch</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Get in Touch</h2>
             <div class="max-w-4xl mx-auto text-center space-y-4">
-                <p class="text-lg">📍 Etobicoke, ON Canada.</p>
-                <p class="text-lg">📞 (123) 456-7890</p>
-                <p class="text-lg">✉️ info@thebeatyglam.com</p>
+                <p class="text-lg">📍 Oakville, ON Canada.</p>
+                <p class="text-lg">✉️ sales@thebeautyglamourshop.ca</p>
             </div>
         </section>
 
